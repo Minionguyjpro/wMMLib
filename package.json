@@ -1,0 +1,27 @@
+{
+  "name": "wmmlib",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "An easy-to-use library for the webMAN MOD PS3 API written in Node.js.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Minionguyjpro/wMMLib.git"
+  },
+  "keywords": [
+    "library",
+    "nodejs",
+    "webman",
+    "ps3",
+    "cfw"
+  ],
+  "author": "Minionguyjpro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Minionguyjpro/wMMLib/issues"
+  },
+  "homepage": "https://github.com/Minionguyjpro/wMMLib#readme"
+}
