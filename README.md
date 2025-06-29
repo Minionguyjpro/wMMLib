@@ -61,7 +61,7 @@ Below all functions provided by this library are listed along with a description
 - `notify(msg)`: Sends an on-screen notification to the PS3.
   - The `msg` parameter specifies the message to be sent.
 
-## Utility Functions
+### Utility Functions
 
 - `fetchCPUTemperature`: Also exported directly for advanced usage.
 - `setFanSpeed`: Also exported directly for advanced usage.
