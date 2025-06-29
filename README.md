@@ -41,7 +41,7 @@ const { wMMLib } = require('wmmlib');
 })();
 ```
 
-### Functions
+## Functions
 
 Below all functions provided by this library are listed along with a description on what it does.
 
