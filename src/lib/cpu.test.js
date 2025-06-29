@@ -10,7 +10,7 @@ describe('fetchCPUTemperature', function() {
 
     it('should fetch CPU temperature from the PS3', async function() {
         if (!useRealPs3) this.skip();
-        const result = await fetchCPUTemperature({ config: { ps3Host: testHost }, unit: 'C' });
+        const result = await fetchCPUTemperature({ config: { ps3Host: testHost}});
         assert.strictEqual(typeof result.cpu, 'number');
         assert(result.cpu > 0, 'CPU temperature should be greater than 0');
         console.log('Fetched CPU temperature:', result.cpu);
