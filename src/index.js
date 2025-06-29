@@ -1,5 +1,7 @@
-import { ringBuzzer } from './lib/buzzer.js';
+import { fetchCPUTemperature } from './lib/cpu.js';
 import { notify } from './lib/notify.js';
+import { ringBuzzer } from './lib/buzzer.js';
+import { setFanSpeed } from './lib/fan.js';
 
 /**
  * Factory function that returns an async-enabled interface.
@@ -21,10 +23,14 @@ export async function createLibrary(config = {}) {
   };
 
   return {
-    ringBuzzer: (buzzerId) => ringBuzzer({ config: context.config, buzzerId }),
+    fetchCPUTemperature: (unit) => fetchCPUTemperature({ unit }),
     notify: (msg) => notify({ msg }),
+    ringBuzzer: (buzzerId) => ringBuzzer({ buzzerId }),
+    setFanSpeed: (speed) => setFanSpeed({ speed }),
   };
 }
 
-export { ringBuzzer };
+export { fetchCPUTemperature };
 export { notify };
+export { ringBuzzer };
+export { setFanSpeed };
